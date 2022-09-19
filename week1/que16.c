@@ -2,8 +2,8 @@
 
 int main() {
     int a, b;
-    printf("ë‘ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+    printf("µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
     scanf("%d %d", &a, &b);
-    printf("êµí™˜ ëœ ë‘ ìˆ˜ : %d %d", b, a);
+    printf("±³È¯ µÈ µÎ ¼ö : %d %d", b, a);
     return 0;
 }

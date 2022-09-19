@@ -2,11 +2,11 @@
 
 int main() {
     int height, weight;
-    printf("ë³¸ì¸ì˜ í‚¤ì™€ ëª¸ë¬´ê²Œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.\ní‚¤(cm) : ");
+    printf("º»ÀÎÀÇ Å°¿Í ¸ö¹«°Ô¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.\nÅ°(cm) : ");
     scanf("%d", &height);
-    printf("ëª¸ë¬´ê²Œ (kg) : ");
+    printf("¸ö¹«°Ô (kg) : ");
     scanf("%d", &weight);
     double result = ((double)weight / (((double)height / 100) * ((double)height / 100)));
-    printf("ë‹¹ì‹ ì˜ BMI ì¸¡ì •ëŸ‰ì€ %.2fì…ë‹ˆë‹¤.", result);
+    printf("´ç½ÅÀÇ BMI ÃøÁ¤·®Àº %.2fÀÔ´Ï´Ù.", result);
     return 0;
 }

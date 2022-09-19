@@ -2,7 +2,7 @@
 
 int main() {
     int num;
-    printf("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+    printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
     scanf("%d", &num);
     num = (num > 0) ? num : -num;
     printf("%d", num);

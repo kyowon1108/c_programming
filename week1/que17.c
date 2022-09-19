@@ -2,9 +2,9 @@
 
 int main() {
     int num;
-    printf("ë‘ìë¦¬ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+    printf("µÎÀÚ¸® ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
     scanf("%d", &num);
-    printf("1ì˜ ìë¦¬ ìˆ˜ : %d\n", num % 10);
-    printf("10ì˜ ìë¦¬ ìˆ˜ : %d", num / 10);
+    printf("1ÀÇ ÀÚ¸® ¼ö : %d\n", num % 10);
+    printf("10ÀÇ ÀÚ¸® ¼ö : %d", num / 10);
     return 0;
 }

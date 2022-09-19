@@ -7,9 +7,9 @@ int s(int num1, int num2) {
 
 int main() {
     int num1, num2;
-    printf("ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
+    printf("µÎ °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
     scanf("%d %d", &num1, &num2);
     int result = (num1 * num2) / s(num1, num2);
-    printf("ìµœì†Œê³µë°°ìˆ˜ : %d", result);
+    printf("ÃÖ¼Ò°ø¹è¼ö : %d", result);
     return 0;
 }

@@ -7,8 +7,8 @@ int gcd(int num1, int num2) {
 
 int main() {
     int num1, num2;
-    printf("ë‘ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
+    printf("µÎ °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
     scanf("%d %d", &num1, &num2);
-    printf("ìµœëŒ€ê³µì•½ìˆ˜ : %d", gcd(num1, num2));
+    printf("ÃÖ´ë°ø¾à¼ö : %d", gcd(num1, num2));
     return 0;
 }

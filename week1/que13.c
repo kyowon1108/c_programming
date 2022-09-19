@@ -9,6 +9,6 @@ int main() {
         }
         ++i;
     }
-    printf("í™€ìˆ˜ì˜ í•© : %d", sum);
+    printf("È¦¼öÀÇ ÇÕ : %d", sum);
     return 0;
 }

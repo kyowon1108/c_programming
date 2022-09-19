@@ -8,7 +8,7 @@ int tentotwo(int num) {
 
 int main() {
     int num;
-    printf("ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
+    printf("¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
     scanf("%d", &num);
     tentotwo(num);
     return 0;

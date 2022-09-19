@@ -11,6 +11,6 @@ int main() {
         }
         ++i;
     } while (i <= 100);
-    printf("í™€ìˆ˜ì˜ ê°œìˆ˜ : %d\ní™€ìˆ˜ì˜ í•© : %d", count, sum);
+    printf("È¦¼öÀÇ °³¼ö : %d\nÈ¦¼öÀÇ ÇÕ : %d", count, sum);
     return 0;
 }
