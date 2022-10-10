@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int tentotwo(int num) {
-	if (num > 1) tentotwo(num / 2);
-	printf("%d", num % 2);
+	if (num > 1) {
+        printf("[%d]\n", num);
+        tentotwo(num / 2);
+    }
+	printf("(%d) [%d]\n", num % 2, num);
 		
 }
 

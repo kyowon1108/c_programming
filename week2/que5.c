@@ -1,3 +1,11 @@
+/*
+2022204080 이교원
+sort 함수는 입력박은 num 배열을 정렬을 하여 출력함.
+2중 for문을 사용해 num의 i번째 인덱스가 num의 j번째 인덱스보다 작을 경우 둘의 위치를 바꿈
+sortReverse 함수는 거꾸로 정렬한 배열을 출력함.
+how 변수에는 ASC를 출력할 것인지 아니면 CESC로 출력할 것인지를 정함.
+*/
+
 #include <stdio.h>
 
 void sort(int num[], int len) {
