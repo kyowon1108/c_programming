@@ -12,5 +12,4 @@ void main(void) {
         string[strl - 1] = ch;
         printf("[%d] %s\n", i, string);
     }
-    //asdf
 }
