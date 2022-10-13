@@ -3,12 +3,7 @@
 #include <string.h>
 
 char * StrLTrim(char * str) {
-    for (int i = 0; i < strlen(str) - 1; ++i) {
-        // printf("%d, %d, %d\n", i, *str, isspace(str[i]));
-        if (isspace(str[i])) {
-            str++;
-        }
-    }
+    while(isspace(*str)) str++;
     return str;
 }
 

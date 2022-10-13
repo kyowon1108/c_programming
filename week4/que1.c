@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-// char * StrCpy(char * str, const char * input) {
-//     char *a = str;
-//     while ((*str++ == *input++) != 0){}
-//     return a;
-// }
-
 char *StrCpy(char *str, const char *src)
 {
     char *a;

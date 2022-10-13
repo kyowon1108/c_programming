@@ -2,14 +2,8 @@
 #include <string.h>
 
 char * StrCat(char * str, const char * src) {
-    // char *a = str;
-    // while (*src) {
-    //     *a++ = *src++;
-    // }
-    // *a = 0;
-    // return str;
-    int i;
-    for (i = 0; *src; ++i) {
+    int i = 5;
+    for (; *src; ++i) {
         *(str+i) = *src++;
     }
     *(str+i) = 0;
@@ -27,4 +21,3 @@ void main(void) {
     StrCat(string, "프로그래머입니다.");
     puts(string);
 }
-// 이거 코드 정상작동이 안됨
