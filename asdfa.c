@@ -1,17 +1,32 @@
 #include <stdio.h>
+#include <string.h>
+#include <Windows.h>
+#include <conio.h>
+
+void SetPosition(int x, int y) {
+    COORD coord;
+    coord.X = x;
+    coord.X = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
+void SetString(int x, int y, char * str) {
+    SetPosition(x, y);
+    puts(str);
+    Sleep(100);
+    system("cls");
+}
 
 int main() {
-    int month, a, b = 0, c, day;
-    char start_day;
+    int i = 0;
+    char * str = "Hello World!";
+    while (!kbhit()) {
+        for(i = 0; i < 50; ++i)
+            SetString(i, i, str);
+        for(i = 50; i >= 0; --i)
+            SetString(i, i, str);
+    }
 
-    printf("월을 입력하세요 : ");
-    scanf("%d", &month);
-    fflush(stdin);
-    printf("그 해 첫번째 요일을 입력하세요 : ");
-    scanf("%c", &start_day);
-
-
-    printf("%d %c", month, start_day);
-
+    printf("Bye!\n\n");
     return 0;
 }
