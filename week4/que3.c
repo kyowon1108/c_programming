@@ -2,7 +2,7 @@
 #include <string.h>
 
 char * StrCat(char * str, const char * src) {
-    int i = 5;
+    int i = strlen(str);
     for (; *src; ++i) {
         *(str+i) = *src++;
     }

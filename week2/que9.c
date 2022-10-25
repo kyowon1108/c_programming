@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int add(int num[], int len) {
+int add(int * num, int len) {
     int res = 0;
     for (int i = 0; i < len; ++i) {
         res += *num++;

@@ -9,16 +9,18 @@ int main() {
     struct tm t;
     time_t time;
 
-    int date[6];
-    int i = 0;
-    char *ptr = strtok(str, "/: ");
-    
-    t.tm_year =  - 1900;
-    t.tm_mon = date[1] - 1;
-    t.tm_mday = date[2];
-    t.tm_hour = date[3];
-    t.tm_min = date[4];
-    t.tm_sec = date[5];
+    t.tm_sec = atoi(&str[12]);
+    str[12] = 0;
+    t.tm_min = atoi(&str[10]);
+    str[10] = 0;
+    t.tm_hour = atoi(&str[8]);
+    str[8] = 0;
+    t.tm_mday = atoi(&str[6]);
+    str[6] = 0;
+    t.tm_mon = atoi(&str[4]) - 1;
+    str[4] = 0;
+    t.tm_year = atoi(&str[0]) - 1900;
+
     time = mktime(&t);
 
     printf("%4d/%02d/%02d %02d:%02d:%02d \n", t.tm_year+1900, t.tm_mon+1, t.tm_mday, t.tm_hour, t.tm_min, t.tm_sec);

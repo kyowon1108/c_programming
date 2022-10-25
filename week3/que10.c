@@ -12,10 +12,10 @@ double aver(int *ar, int len) {
 
 int main() {
     int arr[4][7] = {
-        { 70, 45, 100, 92, 150, 81, 90 },
-        { 88, 92, 77, 30, 52, 55, 66 },
-        { 50, 90, 88, 75, 77, 49, 72 },
-        { 120, 92, 80, 150, 130, 105, 113 }
+        { 70, 45, 100, 92, 150, 81 },
+        { 88, 92, 77, 30, 52, 55 },
+        { 50, 90, 88, 75, 77, 49 },
+        { 120, 92, 80, 150, 130, 105 }
     };
     char *name[4] = {"관악점", "강남점", "명동점", "대림점"};
 
@@ -25,15 +25,14 @@ int main() {
     int *t2;
     int avarr[4];
 
-    printf("> 실적별 출력...\n");
     for (int i = 0; i < 4; ++i) {
-        avarr[i] = aver(arr[i], 7);
+        arr[i][6] = aver(arr[i], 6);
         name_p[i] = name[i];
         arr_p[i] = arr[i];
     }
     for (int i = 0; i < 3; ++i) {
         for (int j = i + 1; j < 4; ++j) {
-            if (avarr[i] < avarr[j]) {
+            if (arr[i][6] < arr[j][6]) {
                 t1 = name_p[i];
                 name_p[i] = name_p[j];
                 name_p[j] = t1;
@@ -44,6 +43,8 @@ int main() {
             }
         }
     }
+
+    printf("> 실적별 출력...\n");
     for (int i = 0; i < 4; ++i) {
         printf("%s", name_p[i]);
         for (int j = 0; j < 7; ++j) {
@@ -52,6 +53,7 @@ int main() {
         printf("\n");
     }
     printf("\n");
+    
     printf("> 지점별 출력...\n");
     for (int i = 0; i < 4; ++i) {
         printf("%s", name[i]);

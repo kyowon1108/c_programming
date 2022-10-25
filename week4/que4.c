@@ -2,10 +2,11 @@
 #include <string.h>
 
 char * StrChr(const char * str, char src) {
-    while (*str != src){ str++; }
-    return (char*)str;
+    const char * strnull = str;
+    while (*str && *str != src){ str++; }
+    return (*str == src) ? (char*)str : (char*)0;
 }
-
+// 0Àº NULL
 void main(void) {
     char string[100];
     char * pos;

@@ -44,4 +44,4 @@ char *StrMid(char * str, int len) {
         str++;
     }
     return str;
-}
+} // ´äÁö´Â strdupÀ» ¾¸

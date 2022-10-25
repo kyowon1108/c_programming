@@ -17,11 +17,11 @@ double avg(int * num) {
 }
 int main() {
     struct student st = {315, "홍길동", {82, 93, 74, 90, 65}, avg(st.score)};
-    printf("이름 : %d\n", st.num);
-    printf("나이 : %s\n", st.name);
-    printf("성적 : ");
+    printf("학번 : %d\n", st.num);
+    printf("이름 : %s\n", st.name);
+    printf("점수 : ");
     for (int i = 0; i < 5; ++i) {
         printf("%5d", st.score[i]);
     }
-    printf("\n평균 : %.1f", st.avg);
+    printf("\nÆ?±? : %.1f", st.avg);
 }

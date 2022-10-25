@@ -9,7 +9,6 @@ char * StrRev(char * str) {
     while (*str++);
     str -= 2;
 
-    int i = 0;
     while(test < str){
         tem = *str;
         *str-- = *test;
