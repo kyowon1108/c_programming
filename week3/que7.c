@@ -2,11 +2,10 @@
 
 int main() {
     int arr[4][5];
+    int count = 1;
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 5; ++j) {
-            int num;
-            scanf("%d", &num);
-            arr[i][j] = num;
+            arr[i][j] = count++;
         }
     }
     for (int i = 0; i < 4; ++i) {

@@ -33,7 +33,7 @@ int main() {
     }
 
     printf("\n\n¿¬·Éº° Æò±Õ À­¸ö ÀÏÀ¸Å°±â È½¼ö\n");
-    printf("20´ë : %.2f\n30´ë : %.2f\n40´ë : %.2f", aver(arr[0], 4), aver(arr[1], 2), aver(arr[2], 3));
+    printf("20´ë : %.2f\n30´ë: %.2f\n40´ë : %.2f", aver(arr[0], 4), aver(arr[1], 2), aver(arr[2], 3));
     return 0;
 
 }
