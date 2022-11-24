@@ -12,7 +12,9 @@ int main() {
         int num;
         scanf("%d", &num);
         srand(time(NULL));
-        int cpu = rand(time % 3) + 1;
-        if ((num ==  && cpu == )) // user win
+        int cpu = rand() % 3 + 1;
+        if ((num == 1 && cpu == 2) || (num == 2 && cpu == 3) || (num == 3 && cpu == 1)) // user win
+        else if (num == cpu) // drew
+        else {}
     }
 }
