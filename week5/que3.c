@@ -27,7 +27,7 @@ void print_friend (char *name, int age, double height, double weight, int check)
     printf("\n등록된 친구 목록\n");
     printf("===================================\n");
     for (int i = 0; i < check; ++i) {
-        printf("%s    ,  %4d, %6.2f, %6.2f\n", *(name + i), *(age + i), *(height + i), *(weight + i);
+        printf("%s    ,  %4d, %6.2f, %6.2f\n", *(name + i), *(age + i), *(height + i), *(weight + i));
     }
     printf("===================================\n\n");
 }
@@ -56,7 +56,7 @@ int main() {
                 printf("등록된 친구가 없습니다.\n\n");
                 continue;
             }
-           print_friend (name, age, height, weight, check)
+           print_friend(name, age, height, weight, check);
         }
         else if (func == 3) break;
         else {
@@ -66,4 +66,3 @@ int main() {
     }
     return 0;
 }
-// 다시 고치기

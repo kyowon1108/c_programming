@@ -5,7 +5,7 @@ int main() {
     int a[5] = {5, 19, 27, 21, 34 };
     int b[5];
 
-    memmove(b, a, sizeof(int) * 5);
+    memmove(b, a, sizeof(int) * 5); // memmove를 사용해 b에 a 값을 복사함
     printf("A배열의 값\n  ");
     for (int i = 0; i < 5; ++i) {
         printf("%d ", a[i]);

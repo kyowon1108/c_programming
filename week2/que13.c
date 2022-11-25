@@ -7,7 +7,7 @@ int main() {
     printf("배열: ");
     for (int i = 0; i < 10; ++i) {
         printf("%.2f ", *point);
-        sum += *point++;
+        sum += *point++; // sum에 point의 주소에 있는 값을 더하면서 주소값 +1
     }
     printf("\n평균: %f", sum / 10);
     return 0;

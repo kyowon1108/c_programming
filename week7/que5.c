@@ -14,7 +14,7 @@ int main() {
         x += sign;
     }
     x -= 1;
-    for (i = size - 1;i > 0; --i) {
+    for (i = size - 1; i > 0; --i) {
         for (j = 0; j < i; ++j) {
             y += sign;
             a[y][x] = num++;

@@ -7,7 +7,7 @@ int main() {
     strcpy(string, "(111)-(222)-(333)");
 
     char * ptr;
-    ptr = strtok(string, "()-");
+    ptr = strtok(string, "()-"); // strtok을 사용해 (, ), -을 구분해 분리함
 
     while (ptr) {
         printf("%s\n", ptr);

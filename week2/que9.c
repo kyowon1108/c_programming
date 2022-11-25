@@ -3,7 +3,7 @@
 int add(int * num, int len) {
     int res = 0;
     for (int i = 0; i < len; ++i) {
-        res += *num++;
+        res += *num++;// num의 주소에 있는 값을 res에 더함
     }
     return res;
 }

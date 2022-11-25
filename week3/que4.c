@@ -34,7 +34,7 @@ int main() {
         for (int j = 0; j < 3; ++j) {
             int res = 0;
             for (int k = 0; k < 3; ++k) {
-                res += a[i][k] * b[k][j];
+                res += a[i][k] * b[k][j]; // 3중 for문을 사용해 행렬의 곱을 계산함
             }
             printf("%4d", res);
         }

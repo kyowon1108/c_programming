@@ -9,7 +9,7 @@ int main() {
     }
     printf("\n역순:");
     for (int i = 0; i < 10; ++i) {
-        printf(" %d", *point--);
+        printf(" %d", *point--); // point의 주소를 출력하면서 동시에 주소를 -1함
     }
     return 0;
 }

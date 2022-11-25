@@ -37,25 +37,3 @@ char *StrRight (char * string, int len) {
     int n = strlen(string);
     return strdup(&string[n - len]);
 }
-// char * StrLeft(char * str, int len) {
-//     int i;
-//     for (i = 0; i < len; ++i);
-//     str[i] = 0;
-//     return str;
-// }
-
-// char * StrRight(char * str, int len) {
-//     int strl = strlen(str);
-//     for (int i = strl; i > len; --i) {
-//         str++;
-//     }
-//     return str;
-// }
-
-// char *StrMid(char * str, int len) {
-//     int strl = strlen(str);
-//     for (int i = 0; i < len; ++i) {
-//         str++;
-//     }
-//     return str;
-// }

@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    FILE * fp = fopen("que8.c", "r");
+    FILE * fp = fopen("que8.c", "rt");
 
     int num1, num2, total = 0;
     char sign;
 
-    while (scanf(fp, "%d %d %c", &num1, %num2, sign) != EOF) {
-        switch (c) {
+    while (scanf(fp, "%d %d %c", &num1, &num2, sign) != EOF) {
+        switch (sign) { // sign을 구분해 어떤 사칙연산을 하는지 결정함
             case '+':
                 total = num1 + num2;
                 break;

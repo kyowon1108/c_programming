@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void add_matrix(int (*x)[3], int (*y)[3]) {
+void add_matrix(int (*x)[3], int (*y)[3]) { // 두 배열을 합친 값을 printf하는 함수임
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
             printf("%5d", x[i][j] + y[i][j]);
@@ -15,14 +15,14 @@ int main() {
     printf("x 행렬:\n");
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
-            printf("%5d", x[i][j]);
+            printf("%5d", x[i][j]);// x 행렬 출력
         }
         printf("\n");
     }
     printf("y 행렬:\n");
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
-            printf("%5d", y[i][j]);
+            printf("%5d", y[i][j]);// y 행렬 출력
         }
         printf("\n");
     }

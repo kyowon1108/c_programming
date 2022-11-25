@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &height);
     printf("몸무게 (kg) : ");
     scanf("%d", &weight);
-    double result = ((double)weight / (((double)height / 100) * ((double)height / 100)));
+    double result = ((double)weight / (((double)height / 100) * ((double)height / 100))); // bmi 측정 공식
     printf("당신의 BMI 측정량은 %.2f입니다.", result);
     return 0;
 }

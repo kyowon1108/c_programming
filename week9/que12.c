@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char * gets_f(char * buffer) {
+char * gets_f(char * buffer) { // gets의 역할을 하는 함수임
     int i;
     for (i = 0; i < 63; ++i) {
         buffer[i] = fgetc(stdin);
@@ -11,12 +11,12 @@ char * gets_f(char * buffer) {
     return buffer;
 }
 
-int puts_f(const char * string) {
+int puts_f(const char * string) { // puts의 역할을 하는 함수임
     for (int i = 0; i < 63; ++i) {
         fputc(string[i], stdout);
         if (string[i] == 0) break;
     }
-    puts("");
+    puts(""); //줄바꿈을 위함
     return 0;
 }
 

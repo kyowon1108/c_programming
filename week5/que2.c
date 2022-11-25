@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct info {
+struct info { // 이름, 나이, 키, 몸무게를 담고 있는 info 구조체
     char name[20];
     int age;
     double height;

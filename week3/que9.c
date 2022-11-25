@@ -18,9 +18,9 @@ int main() {
         char check[20];
         printf("> 검색 단어 (종료는 end 입력) : ");
         scanf("%s", check);
-        if (!strcmp(check, "end")) break;
+        if (!strcmp(check, "end")) break; // strcmp를 사용해 end를 입력받을 경우 while문에서 빠져나옴
         for(int k = 0; k < 10; ++k) {
-            if (!strcmp(check, arr[k])) {
+            if (!strcmp(check, arr[k])) { // strcmp를 사용해 arr의 k번째에 있는 값과 일치한지 확인함
                 printf("# %d번째 같은 단어가 있습니다!\n\n", k + 1);
                 break;
             }

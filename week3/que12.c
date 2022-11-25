@@ -16,7 +16,7 @@ int main() {
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 4; ++j) {
             if (ary1[i][j] == ary2[i][j]){
-                printf("(%d, %d)\n", i, j);
+                printf("(%d, %d)\n", i, j); // 행과 열이 일치하는 항이 존재할떄까지 printf를 함
             }
         }
     }

@@ -3,9 +3,9 @@
 
 int check_name(char (*name)[20], char * check, int len) {
     for (int i = 0; i < len; ++i) {
-        if (!strcmp(name[i], check)) return 1;
+        if (!strcmp(name[i], check)) return 1; // strcmp를 사용해 name이 일치하다면 1를 리턴함
     }
-    return 0;
+    return 0; // 그렇지 않다면 0을 리턴함
 }
 
 int input_name(char (*name)[20]) {

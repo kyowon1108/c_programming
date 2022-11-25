@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 char getchar_f() {
-    return fgetc(stdin);
+    return fgetc(stdin); // getchar의 역할을 하는 함수
 }
 
 void putchar_f(char c) {
-    fputc(c, stdout);
+    fputc(c, stdout);// putchar의 역할을 하는 함수
     return;
 }
 
