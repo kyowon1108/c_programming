@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+sign을 구분해 어떤 사칙연산을 하는지 결정함
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -7,7 +12,7 @@ int main() {
     char sign;
 
     while (scanf(fp, "%d %d %c", &num1, &num2, sign) != EOF) {
-        switch (sign) { // sign을 구분해 어떤 사칙연산을 하는지 결정함
+        switch (sign) {
             case '+':
                 total = num1 + num2;
                 break;

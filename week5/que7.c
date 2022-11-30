@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+0, 4, 9번 인덱스에서 int를 뽑아내 hour, min, sec에 저장함
+mktime한 후 시간을 빼 time을 계산함
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <time.h>

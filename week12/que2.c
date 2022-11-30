@@ -1,7 +1,10 @@
-#include <stdio.h>
-#define max 100
+/*
+2022204080 ÀÌ±³¿ø
+*/
 
-char stack[max];
+#include <stdio.h>
+
+char stack[100];
 int top = 0;
 
 int main() {

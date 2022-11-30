@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+찾는 문자열과 일치하는지 strcmp를 사용해 구분함
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -13,7 +18,7 @@ int main(void) {
     while (feof(fp) == 0) {
         fgets(str, sizeof(str), fp);
         printf("%s", str);
-        if(!strcmp(str, a)) { // 찾는 문자열과 일치하는지 strcmp를 사용해 구분함
+        if(!strcmp(str, a)) {
             printf("문자열을 찾았습니다.\n");
             printf("%s", str);
         }

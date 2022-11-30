@@ -1,11 +1,17 @@
+/*
+2022204080 이교원
+check_name : strcmp를 사용해 name이 일치하다면 1를 리턴함
+그렇지 않다면 0을 리턴함
+*/
+
 #include <stdio.h>
 #include <string.h>
 
 int check_name(char (*name)[20], char * check, int len) {
     for (int i = 0; i < len; ++i) {
-        if (!strcmp(name[i], check)) return 1; // strcmp를 사용해 name이 일치하다면 1를 리턴함
+        if (!strcmp(name[i], check)) return 1;
     }
-    return 0; // 그렇지 않다면 0을 리턴함
+    return 0; 
 }
 
 int input_name(char (*name)[20]) {

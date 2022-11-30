@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+구조체를 사용해 info 안에 name, age, height, weight를 저장함
+일반적인 배열로 저장하는 것과는 달리 관리하기가 매우 편함
+*/
+
 #include <stdio.h>
 
 struct info {

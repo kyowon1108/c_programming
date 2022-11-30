@@ -1,6 +1,11 @@
+/*
+2022204080 이교원
+이름, 나이, 키, 몸무게를 담고 있는 info 구조체
+*/
+
 #include <stdio.h>
 
-struct info { // 이름, 나이, 키, 몸무게를 담고 있는 info 구조체
+struct info {
     char name[20];
     int age;
     double height;

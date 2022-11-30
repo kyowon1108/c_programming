@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+rev : str에서 reverse를 할 포인터 변수
+test : str의 값을 임시로 저장할 포인터 변수
+*/
+
 #include <stdio.h>
 #include <string.h>
 

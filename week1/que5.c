@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+bmi 측정 공식을 사용해 result를 계산함
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -6,7 +11,7 @@ int main() {
     scanf("%d", &height);
     printf("몸무게 (kg) : ");
     scanf("%d", &weight);
-    double result = ((double)weight / (((double)height / 100) * ((double)height / 100))); // bmi 측정 공식
+    double result = ((double)weight / (((double)height / 100) * ((double)height / 100)));
     printf("당신의 BMI 측정량은 %.2f입니다.", result);
     return 0;
 }

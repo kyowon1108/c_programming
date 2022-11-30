@@ -1,6 +1,12 @@
+/*
+2022204080 이교원
+add_matrix : 두 배열을 합친 값을 printf하는 함수임
+*/
+
 #include <stdio.h>
 
-void add_matrix(int (*x)[3], int (*y)[3]) { // 두 배열을 합친 값을 printf하는 함수임
+
+void add_matrix(int (*x)[3], int (*y)[3]) {
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
             printf("%5d", x[i][j] + y[i][j]);

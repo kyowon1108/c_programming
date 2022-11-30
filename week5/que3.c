@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+배열을 사용해 name, age, height, weight을 저장하고 check 변수를 통해 몇번째에 입력했는지 체크함     
+*/
+
 #include <stdio.h>
 
 void print_menu() {
@@ -10,20 +15,20 @@ void print_menu() {
     printf("번호 선택 : ");
 }
 
-void add_friend(char *name, int age, double height, double weight, int num) {
+void add_friend(char (*name)[20], int *age, double *height, double *weight, int num) {
     printf("\n새로운 친구 정보를 입력하세요.\n");
     printf("이름 : ");
     scanf("%s", *(name + num));
     printf("나이 : ");
-    scanf("%d", (age + num));
+    scanf("%d", age + num);
     printf("키 : ");
-    scanf("%lf", (height + num));
+    scanf("%lf", height + num);
     printf("몸무게 : ");
-    scanf("%lf", (weight + num));
+    scanf("%lf", weight + num);
     printf("입력을 완료했습니다.\n\n");
 }
 
-void print_friend (char *name, int age, double height, double weight, int check) {
+void print_friend (char (*name)[20], int *age, double *height, double *weight, int check) {
     printf("\n등록된 친구 목록\n");
     printf("===================================\n");
     for (int i = 0; i < check; ++i) {

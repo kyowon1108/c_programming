@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+point의 주소를 출력하면서 동시에 주소를 -1함
+
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -9,7 +15,7 @@ int main() {
     }
     printf("\n역순:");
     for (int i = 0; i < 10; ++i) {
-        printf(" %d", *point--); // point의 주소를 출력하면서 동시에 주소를 -1함
+        printf(" %d", *point--);
     }
     return 0;
 }

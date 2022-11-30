@@ -1,6 +1,12 @@
+/*
+2022204080 이교원
+문자열 비교 함수
+a와 b가 같은 길이를 가질 경우
+a와 b가 같을 경우 0 리턴
+*/
+
 #include <stdio.h>
 #include <string.h>
-// 문자열 비교 함수
 
 int StrCmp(char * a, char * b) {
     int a1 = 0; 
@@ -13,16 +19,7 @@ int StrCmp(char * a, char * b) {
     }
     if (a1 > b1) return 1;
     else if (a1 < b1) return -1; 
-    /* 과제 정답에 적혀있는 구현방식
-    while (*a && *b) { // a와 b가 같은 길이를 가질 경우
-        if (*a != *b)
-            return (*a < *b) ? -1 : 1;
-        a++, b++;
-    }
-    if (*a != *b)
-        return (*a < *b) ? -1 : 1;
-    return 0; // a와 b가 같을 경우 0 리턴
-    */
+    else return 0;
 }
 
 int main() {

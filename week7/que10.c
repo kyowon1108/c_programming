@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+strtok을 사용해 (, ), -을 구분해 분리함
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -7,7 +12,7 @@ int main() {
     strcpy(string, "(111)-(222)-(333)");
 
     char * ptr;
-    ptr = strtok(string, "()-"); // strtok을 사용해 (, ), -을 구분해 분리함
+    ptr = strtok(string, "()-");
 
     while (ptr) {
         printf("%s\n", ptr);

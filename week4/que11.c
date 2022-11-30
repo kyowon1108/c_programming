@@ -1,3 +1,8 @@
+/*
+2022204080 ÀÌ±³¿ø
+
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -6,7 +11,7 @@ char * StrLeft (char * str, int len);
 char * StrRight (char * str, int len);
 char * StrMid (char * str, int len);
 
-void main(void) {
+void main() {
     char string[100];
     char * p;
 
@@ -21,6 +26,8 @@ void main(void) {
     strcpy(string, "abcde");
     p = StrMid(string, 2);
     puts(p); free(p);
+    
+    return 0;
 }
 
 char * StrLeft ( char * string, int len) {
@@ -29,11 +36,11 @@ char * StrLeft ( char * string, int len) {
     return p;
 }
 
-char * StrMid(char * string, int pos) {
+char * StrMid (char * string, int pos) {
     return strdup(&string[pos]);
 }
 
-char *StrRight (char * string, int len) {
+char * StrRight (char * string, int len) {
     int n = strlen(string);
     return strdup(&string[n - len]);
 }

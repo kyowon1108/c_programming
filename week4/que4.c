@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+str의 주소에 있는 값이 src와 같을때까지 주소를 +1하고, 찾으면 str 출력, 못찾으면 0 출력
+*/
+
 #include <stdio.h>
 #include <string.h>
 

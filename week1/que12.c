@@ -1,11 +1,15 @@
-#include <stdio.h>
+/*
+2022204080 이교원
+홀수일 경우 홀수 개수 +1, sum에 i를 더함
+*/
 
+#include <stdio.h>
 int main() {
     int count = 0;
     int sum = 0;
     int i = 50;
     do {
-        if (i % 2 == 1) { // 홀수일 경우 홀수 개수 +1, sum에 i를 더함
+        if (i % 2 == 1) {
             ++count;
             sum += i;
         }

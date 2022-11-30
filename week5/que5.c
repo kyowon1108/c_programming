@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+strtok을 사용해 /와 :를 구분해 str을 분리해 year, mon 등에 넣음
+year은 1900년부터 시작하기 때문에 1900을 빼주었음
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <time.h>

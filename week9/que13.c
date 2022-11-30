@@ -1,3 +1,7 @@
+/*
+2022204080 ÀÌ±³¿ø
+*/
+
 #include <stdio.h>
 #include <string.h>
 

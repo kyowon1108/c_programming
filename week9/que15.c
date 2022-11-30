@@ -1,3 +1,7 @@
+/*
+2022204080 ÀÌ±³¿ø
+*/
+
 #include <stdio.h>
 #define FILENAME_LEN 50
 

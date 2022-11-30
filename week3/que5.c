@@ -1,7 +1,11 @@
+/*
+2022204080 이교원
+main 함수의 max가 포인터변수이므로 그 주소를 받기 위해 2중 포인터 사용
+*/
+
 #include <stdio.h>
 
 void getMax(int **max, int arr[], int len) {
-    //main 함수의 max가 포인터변수이므로 그 주소를 받기 위해 2중 포인터 사용
     for (int i = 0; i < len; ++i) {
         if (**max < arr[i]) **max = arr[i];
     }

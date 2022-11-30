@@ -1,3 +1,7 @@
+/*
+2022204080 이교원
+*/
+
 #include <stdio.h>
 
 char * gets_f(char * buffer) { // gets의 역할을 하는 함수임

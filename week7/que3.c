@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+i번째 항과 len - i - 1번째 항이 같지 않으면 회문이 아님.
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -10,7 +15,7 @@ int main() {
     int len = strlen(str);
     int check = 1;
     for (int i = 0; i < len / 2 ; ++i) {
-        if (str[i] != str[len - i - 1]) { // i번째 항과 len - i - 1번째 항이 같지 않으면 회문이 아님.
+        if (str[i] != str[len - i - 1]) {
             printf("회문이 아닙니다.");
             check = 0;
             break;

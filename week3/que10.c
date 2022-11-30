@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+arr의 6번 인덱스에 arr의 i번째 항의 평균을 집어넣음
+평균을 비교해 sort해 실적별 출력을 함
+*/
+
 #include <stdio.h>
 #include <math.h>
 
@@ -26,13 +32,13 @@ int main() {
     int avarr[4];
 
     for (int i = 0; i < 4; ++i) {
-        arr[i][6] = aver(arr[i], 6); // arr의 6번 인덱스에 arr의 i번째 항의 평균을 집어넣음
+        arr[i][6] = aver(arr[i], 6);
         name_p[i] = name[i];
         arr_p[i] = arr[i];
     }
     for (int i = 0; i < 3; ++i) {
         for (int j = i + 1; j < 4; ++j) {
-            if (arr[i][6] < arr[j][6]) { // 평균을 비교해 sort하는 과정임
+            if (arr[i][6] < arr[j][6]) {
                 t1 = name_p[i];
                 name_p[i] = name_p[j];
                 name_p[j] = t1;

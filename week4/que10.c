@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+from에 입력된 char을 str에서 찾아서 to로 교체함
+*/
+
 #include <stdio.h>
 #include <string.h>
 

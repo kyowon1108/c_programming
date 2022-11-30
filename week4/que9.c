@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+string과 str을 하나씩 비교해가면서 만약 같지 않은 글자가 발견되면 check을 0으로 설정, 아니면 1로 유지
+그렇게 해서 string의 len * scan한 str의 len을 한만큼의 for문을 돌려 얼마나 있는지 찾아내 len에 저장
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -28,4 +34,4 @@ void main(void) {
         }
         printf("검색 결과 : %d개", len);
     }
-}// 답지에는 strncnp를 씀
+}

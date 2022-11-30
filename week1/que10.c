@@ -1,7 +1,12 @@
+/*
+2022204080 이교원
+1부터 num까지의 합 공식을 사용함
+*/
+
 #include <stdio.h>
 
 int sum(int num) {
-    return (num * (num + 1)) / 2; // 1부터 num까지의 합 공식 사용
+    return (num * (num + 1)) / 2;
 }    
 int main() {
     int re = 0;

@@ -1,3 +1,9 @@
+/*
+2022204080 이교원
+strtok을 통해 띄어쓰기를 기준으로 나눔
+ptr의 크기가 max보다 클 경우에 max_str에 ptr을 집어넣음
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -8,11 +14,11 @@ int main() {
     int max = 0, total = 0;
     char max_str[100];
     while (fscanf(fp, "%s", str) != EOF) {
-        char * ptr = strtok(str, " "); //strtok을 통해 띄어쓰기를 기준으로 나눔
+        char * ptr = strtok(str, " ");
 
         while (ptr != NULL) {
             if (strlen(ptr) >= max) {
-                strcpy(max_str, ptr); // ptr의 크기가 max보다 클 경우에 max_str에 ptr을 집어넣음
+                strcpy(max_str, ptr);
             }
             total += strlen(ptr);
             ptr = strtok(NULL, " ");

@@ -1,3 +1,8 @@
+/*
+2022204080 이교원
+두 수를 새로운 변수를 만들어 교환
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -6,6 +11,6 @@ int main() {
     scanf("%d %d", &a, &b);
     int c = b, d = a;
     a = c, b = d;
-    printf("교환 된 두 수 : %d %d", a, b); // 두 수 교환
+    printf("교환 된 두 수 : %d %d", a, b); 
     return 0;
 }

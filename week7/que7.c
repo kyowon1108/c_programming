@@ -1,3 +1,8 @@
+/*
+2022204080 ÀÌ±³¿ø
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

@@ -1,4 +1,7 @@
-#include <stdio.h>
+/*
+2022204080 이교원
+행과 열이 일치하는 항이 존재할떄까지 printf를 함
+*/
 
 int main() {
     int ary1[3][4] = {15, 3, 9, 11, 23, 7, 10, 12, 0, 17, 55, 24};
@@ -16,7 +19,7 @@ int main() {
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 4; ++j) {
             if (ary1[i][j] == ary2[i][j]){
-                printf("(%d, %d)\n", i, j); // 행과 열이 일치하는 항이 존재할떄까지 printf를 함
+                printf("(%d, %d)\n", i, j);
             }
         }
     }

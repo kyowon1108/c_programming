@@ -1,7 +1,10 @@
-#include <stdio.h>
-#define max 5
+/*
+2022204080 이교원
+*/
 
-char stack[max];
+#include <stdio.h>
+
+char stack[5];
 int top = 0;
 
 int main() {
@@ -11,7 +14,7 @@ int main() {
         scanf("%c", &func);
         getc(stdin);
         if (func == '+') {
-            if (top == max) {
+            if (top == 5) {
                 printf("%s\n종료되었습니다.\n", stack);
                 break;
             }
